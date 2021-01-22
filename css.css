@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+}
+
+.box {
+    /* background-color: #ffff00; */
+    color: #ff00ff;
+    height: 100px;
+    width: 100px;
+    padding: 50px;
+    border: 30px solid red;
+    margin-bottom: 50px;
+    background: linear-gradient(red, yellow);
+}
+
+.first {
+    margin-top: 80px;
+    padding: 10px;
+    background-color: blue;
+
+}
+
+.second {
+    margin-top: 100px;
+    background-color: green;
+    height: 100px;
+}
