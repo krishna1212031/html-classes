@@ -1,0 +1,28 @@
+.relative {
+    height: 100px;
+    width:100px;
+    background-color: red;
+    position: relative;
+    left:50px;
+    top:50px;
+    
+}
+.static {
+    height:100px;
+    width:100px;
+    background-color:blue;
+}
+.absolute {
+    height:90px;
+    width:90px;
+    position:absolute;
+    background-color:blue;
+    top:10px;
+    left:10px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
