@@ -18,7 +18,7 @@ e */
         hindi: 10,
         english: 20
     },
-    isPresent: false
+    isPresent: false;
 }; */
 
 var a = 2;
@@ -187,4 +187,87 @@ if (a < 0 && a > -Infinity) {
   console.log("Infinity");
 } else console.log("-infinity");
 
+//switch
 
+/* var a = 0;
+ switch (a) {
+    case 0:
+         // do something
+         break;
+    case 1:
+        // do something
+        break;
+    default:
+      // do something
+ }
+*/
+
+var a = 2;
+
+// switch (a) {
+//   case 1:
+//     console.log("case 1 is accepted");
+//     break;
+//   case 2:
+//     console.log("case 2 is accepted");
+//     break;
+//   case 3:
+//     console.log("case 3 is accepted");
+//     break;
+//   case 4:
+//     console.log("case 4 is accepted");
+//     break;
+//   case 5:
+//     console.log("case 5 is accepted");
+// }
+
+switch (a) {
+  case 1:
+  case 2:
+    console.log("case 2 is accepted");
+    break;
+  case 3:
+    console.log("case 3 is accepted");
+    break;
+  case 4:
+    console.log("case 4 is accepted");
+    break;
+  case 5:
+    console.log("case 5 is accepted");
+}
+
+var month = "nov";
+
+switch (month) {
+  case "jan":
+  case "mar":
+  case "may":
+  case "jul":
+  case "aug":
+  case "oct":
+  case "dec":
+    console.log("this month has 31 days.");
+    break;
+  case "apr":
+  case "jun":
+  case "sep":
+  case "nov":
+    console.log("this month has 30 days.");
+    break;
+  case "feb":
+    console.log("this month has 28/29 days.");
+    break;
+  default:
+    console.log('please check your input "' + month + '"');
+}
+
+/*coersion - as per need JS changes number into string or viceversa as well as other 
+variable to thi string or number as well such as true into number 1 and false into number 0 as well as string.
+for example true + "1" = "true1" 
+reason behind this is "JS is trying to minimize errors."*/
+
+// TERNARY
+var a = 0;
+
+// condition ? do if true : do if false
+a > 0 ? console.log("Positive") : a < 0 ? console.log("Negative") : console.log("Zero");
