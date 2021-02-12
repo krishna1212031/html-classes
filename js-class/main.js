@@ -1,8 +1,6 @@
 // ES - EcmaScript
-/* dfv 
-fd 
-ed
-e */
+/* multiline comment 
+signs  */
 
 // number - 1, 2, 23.32 (integer and float)
 // string - "sadf", 'ASDF' (string and char)
@@ -270,4 +268,181 @@ reason behind this is "JS is trying to minimize errors."*/
 var a = 0;
 
 // condition ? do if true : do if false
-a > 0 ? console.log("Positive") : a < 0 ? console.log("Negative") : console.log("Zero");
+a > 0
+  ? console.log("Positive")
+  : a < 0
+  ? console.log("Negative")
+  : console.log("Zero");
+
+// LOOPS
+// FOR LOOP
+
+for (var a = 1; a < 5; a++) {
+  if (a == 3 || a == 2) {
+    continue;
+  }
+
+  console.log(a);
+
+  if (a == 4) break;
+}
+
+console.log(a);
+
+var arr = [2134, 325, 4325, 3265, [13243, 1, 2, 3, 4], 325];
+
+for (a = 0; a < arr.length; a++) {
+  console.log(arr[a]);
+
+  if (arr[a].length) {
+    for (b = 0; b < arr[a].length; b++) {
+      console.log(arr[a][b]);
+    }
+  }
+}
+
+// create an array of all months
+// loop over that array and print the number of days
+
+// agar zada chull mache to ye kar lena
+// https://github.com/SakshiShreya/PythonTutorials/blob/master/Patterns.pdf
+
+// WHILE LOOP
+/* keyword (oprand operator operand)
+body{
+  pre defined function
+    }
+a = 1;
+while (a <= 5) {
+  console.log(a);
+  a++;
+}*/
+
+var a = "#";
+var b = " ";
+var n = 6;
+var c = "";
+
+for (j = 0; j < n; j++) {
+  c = c + a + b;
+  if (j == n - 1)
+    for (i = 0; i < n; i++) {
+      console.log(c);
+    }
+}
+var a = "#";
+var b = " ";
+var n = 6;
+var c = "";
+
+for (j = 0; j < n; j++) {
+  c = c + a + b;
+}
+for (j = 0; j < n; j++) {
+  console.log(c);
+}
+
+var c1 = "";
+var n = 6;
+
+for (var i = 0; i < n; i++) {
+  c = c + "# ";
+}
+for (var i = 0; i < n; i++) {
+  console.log(c);
+}
+
+var n = 6;
+var c = "";
+
+for (i = 0; i < n; i++) {
+  c = c + "# ";
+  console.log(c);
+}
+
+var a = "#";
+var b = " ";
+var n = 6;
+var c = "";
+for (j = 0; j < n; j++) {
+  for (i = 0; i < n - j; i++) {
+    c = c + a + b;
+  }
+  console.log(c);
+  c = "";
+}
+
+var a = " #";
+var b = "  ";
+var n = 8;
+var c = "";
+var d = "";
+var m = 1;
+var o = n;
+for (k = 0; k < o; k++) {
+  for (i = 0; i < m; i++) {
+    c = c + a;
+  }
+  for (j = 0; j < n - 1; j++) {
+    d = d + b;
+  }
+  console.log(d, c);
+  m++;
+  n--;
+  d = "";
+  c = "";
+}
+
+var a = " #";
+var b = "  ";
+var n = 5;
+var c = "";
+var d = "";
+var m = 1;
+var o = n;
+for (j = 0; j < n; j++) {
+  for (k = 0; k < o; k++) {
+    c = c + a;
+  }
+  for (i = 1; i < m; i++) {
+    d = d + b + b;
+  }
+  console.log(d, c);
+  o--;
+  m++;
+  c = "";
+  d = "";
+}
+
+n = 5;
+
+for (i = 0; i < n; i++) {
+  c = "";
+  for (j = 0; j < 2 * i; j++) {
+    c += "  ";
+  }
+  for (j = 0; j < n - i; j++) {
+    c += "# ";
+  }
+  console.log(c);
+}
+
+n = 5;
+c = "";
+for (i = 0; i < n; i++) {
+  c += " #";
+}
+console.log(c);
+
+for (i = 0; i < n - 2; i++) {
+  a = "";
+  for (j = 0; j < n; j++) {
+    if (j == 0 || j == n - 1) {
+      a += " #";
+    } else {
+      a += "  ";
+    }
+  }
+  console.log(a);
+}
+console.log(c);
