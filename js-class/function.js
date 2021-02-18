@@ -51,13 +51,25 @@ function daysInMonth(month) {
 console.log(daysInMonth("jAn"));
 
 
-var n = 2;
 function add(a, b) {
   return a + b;
 }
 
+function sub(a,b) {
+  return a-b;
+}
+
+function mul(a,b) {
+  return a*b;
+}
+
+function div(a,b){
+  return a/b;
+  
+}
+
 function calculator(func, a, b) {
-  return func(a, b + n);
+  return func(a, b);
 }
 
 
