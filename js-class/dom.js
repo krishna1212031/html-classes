@@ -59,16 +59,36 @@ cc("K");
 cc("A");
 
 function sumFor(arr, n) {
-    var sum = 0;
-    if (n<=0)
-    sum = 0;
+  var sum = 0;
+  if (n <= 0) sum = 0;
 
-    for(i=0; i<n; i++) {
-        sum+=arr[i];
-    }
-    return console.log(sum);
-    }
-sumFor([1],0);
-sumFor([2,3,4],1);
-sumFor([2,3,4,5], 3);
+  for (i = 0; i < n; i++) {
+    sum += arr[i];
+  }
+  return console.log(sum);
+}
+sumFor([1], 0);
+sumFor([2, 3, 4], 1);
+sumFor([2, 3, 4, 5], 3);
 
+// Strings using Template Literals
+
+class Book {
+  //constructor
+  constructor(author) {
+    this._author = author;
+  }
+  //getter
+  get writer() {
+    return (this._author = author);
+  }
+  //setter
+  set writer(updateAuthor) {
+    this._author = updateAuthor;
+  }
+}
+
+const novel = new Book("anonymous");
+console.log(novel.writer);
+novel.writer = "My life";
+console.log(novel.writer);
